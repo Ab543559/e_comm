@@ -1,0 +1,219 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:EC-{YYYY}-{MM}-{#######}",
+ "creation": "2025-09-01 21:54:41.949821",
+ "description": "This is the ledger document for the that store commission percent for the user.",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_details_section",
+  "is_cancelled",
+  "posting_time",
+  "posting_date",
+  "column_break_gpoh",
+  "e_user",
+  "is_group_user",
+  "section_break_wtvg",
+  "parent_commission",
+  "column_break_gmcp",
+  "other_level_commission",
+  "section_break_fifq",
+  "e_order",
+  "e_order_commission",
+  "column_break_nvre",
+  "e_order_amount",
+  "section_break_aujm",
+  "user_parent_amount",
+  "other_level_amount",
+  "column_break_opva",
+  "user_order_amount",
+  "company_profit_split_amount",
+  "section_break_pagh",
+  "average_profit_split",
+  "remaining_amount_after_commission",
+  "column_break_tonq",
+  "company_profit_split"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_cancelled",
+   "fieldtype": "Check",
+   "label": "Is cancelled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gpoh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "e_user",
+   "fieldtype": "Link",
+   "label": "E-User",
+   "options": "E-User",
+   "read_only": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "label": "Posting Time",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group_user",
+   "fieldtype": "Check",
+   "label": "Is Group User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_wtvg",
+   "fieldtype": "Section Break",
+   "label": "Commission Transaction"
+  },
+  {
+   "fieldname": "parent_commission",
+   "fieldtype": "Percent",
+   "label": "Parent Commission",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gmcp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_level_commission",
+   "fieldtype": "Percent",
+   "label": "Other Level Commission",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_fifq",
+   "fieldtype": "Section Break",
+   "label": "Order Ledger Details"
+  },
+  {
+   "fieldname": "e_order",
+   "fieldtype": "Link",
+   "label": "E-Order",
+   "options": "E-Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nvre",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "e_order_amount",
+   "fieldtype": "Currency",
+   "label": "E-Order Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "e_order_commission",
+   "fieldtype": "Percent",
+   "label": "E-order Commission",
+   "read_only": 1
+  },
+  {
+   "fieldname": "user_details_section",
+   "fieldtype": "Section Break",
+   "label": "User Details."
+  },
+  {
+   "fieldname": "section_break_aujm",
+   "fieldtype": "Section Break",
+   "label": "Commission Amount"
+  },
+  {
+   "fieldname": "user_parent_amount",
+   "fieldtype": "Currency",
+   "label": "User parent Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_opva",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "user_order_amount",
+   "fieldtype": "Currency",
+   "label": "User Order Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "other_level_amount",
+   "fieldtype": "Currency",
+   "label": "Other Level Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_pagh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "average_profit_split",
+   "fieldtype": "Percent",
+   "label": "Average Profit Split",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_tonq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_profit_split",
+   "fieldtype": "Percent",
+   "label": "Company Profit Split",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company_profit_split_amount",
+   "fieldtype": "Currency",
+   "label": "Company profit Split Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remaining_amount_after_commission",
+   "fieldtype": "Currency",
+   "label": "Remaining Amount After Commission",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-01 22:24:12.148284",
+ "modified_by": "Administrator",
+ "module": "E Comm",
+ "name": "E-Commission Ledger Entry",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

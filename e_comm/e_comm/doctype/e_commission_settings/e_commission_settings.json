@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-01 16:19:21.379096",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_profit_split",
+  "parent_commission",
+  "e_order_commission",
+  "column_break_faxq",
+  "max_level_of_referral",
+  "other_level_commission"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_profit_split",
+   "fieldtype": "Percent",
+   "label": "Company Profit Split"
+  },
+  {
+   "fieldname": "parent_commission",
+   "fieldtype": "Percent",
+   "label": "Parent Commission"
+  },
+  {
+   "fieldname": "e_order_commission",
+   "fieldtype": "Percent",
+   "label": "E-order Commission"
+  },
+  {
+   "fieldname": "column_break_faxq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "max_level_of_referral",
+   "fieldtype": "Int",
+   "label": "Max Level of Referral"
+  },
+  {
+   "fieldname": "other_level_commission",
+   "fieldtype": "Percent",
+   "label": "Other Level Commission"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-09-01 16:25:49.046074",
+ "modified_by": "Administrator",
+ "module": "E Comm",
+ "name": "E-Commission Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

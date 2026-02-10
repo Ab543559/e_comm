@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-01 16:05:16.152713",
+ "description": "This is the table that will handle the setting of our e-commerce platform at the backend.",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_section",
+  "min_purchase_amount",
+  "column_break_grig",
+  "calculation_period",
+  "purchase_condition_section_tab",
+  "image_carousel",
+  "delivery_tab",
+  "company_default_name",
+  "company_default_location",
+  "section_break_nndl",
+  "delivery_charges_per_km",
+  "column_break_bgkv",
+  "google_map_api_key",
+  "mapbox_access_token"
+ ],
+ "fields": [
+  {
+   "fieldname": "overview_section",
+   "fieldtype": "Section Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "min_purchase_amount",
+   "fieldtype": "Currency",
+   "label": "Min Purchase Amount"
+  },
+  {
+   "fieldname": "column_break_grig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "calculation_period",
+   "fieldtype": "Int",
+   "label": "Calculation Period"
+  },
+  {
+   "fieldname": "delivery_tab",
+   "fieldtype": "Tab Break",
+   "label": "Delivery Configuration"
+  },
+  {
+   "fieldname": "company_default_name",
+   "fieldtype": "Data",
+   "label": "Company Default Name"
+  },
+  {
+   "fieldname": "company_default_location",
+   "fieldtype": "JSON",
+   "label": "Company Default Location"
+  },
+  {
+   "fieldname": "section_break_nndl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "delivery_charges_per_km",
+   "fieldtype": "Currency",
+   "label": "Delivery Charges per KM"
+  },
+  {
+   "fieldname": "column_break_bgkv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "google_map_api_key",
+   "fieldtype": "Password",
+   "label": "Google Map API Key"
+  },
+  {
+   "fieldname": "mapbox_access_token",
+   "fieldtype": "Data",
+   "label": "Mapbox Access Token"
+  },
+  {
+   "fieldname": "purchase_condition_section_tab",
+   "fieldtype": "Tab Break",
+   "label": "Purchase Condition Section"
+  },
+  {
+   "fieldname": "image_carousel",
+   "fieldtype": "Table",
+   "label": "Image Carousel",
+   "options": "E-General Image Carousel"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-09-01 16:18:33.150185",
+ "modified_by": "Administrator",
+ "module": "E Comm",
+ "name": "E-General Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

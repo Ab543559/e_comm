@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:SMOL-{YYYY}-{MM}-{####}",
  "creation": "2025-08-22 11:21:28.051181",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -29,6 +30,7 @@
    "label": "Get Order Status"
   },
   {
+   "default": "PENDING",
    "fieldname": "status",
    "fieldtype": "Data",
    "label": "Status"
@@ -75,10 +77,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-22 11:51:19.267616",
+ "modified": "2025-09-01 22:38:55.944427",
  "modified_by": "Administrator",
  "module": "E Comm",
  "name": "Selcom Minimal Order Log",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
